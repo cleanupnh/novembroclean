@@ -1,93 +1,1481 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Novembro Clean: preço especial em combos de sofá até 30/11. Calcule seu orçamento de higienização e impermeabilização de estofados.">
-<meta name="theme-color" content="#1D3358">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#20375f">
+<meta name="description" content="Novembro Clean — preço especial em combos de sofá até 30/11. Higienização e impermeabilização de estofados em Novo Hamburgo e região.">
 <title>Novembro Clean | Clean Up</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--azul:#1d3358;--escuro:#132642;--verde:#0df0a9;--claro:#f5f7f7;--texto:#24334a;--muted:#67758a;--linha:#dfe6e8}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--claro);color:var(--texto);font-family:'DM Sans',Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.35;cursor:default}img{display:block;max-width:100%}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-.top{background:var(--escuro);color:#fff;border-bottom:1px solid #ffffff22}.head{min-height:90px;display:flex;justify-content:space-between;align-items:center;gap:16px}.marca{display:flex;align-items:center;gap:13px}.gota{width:51px;height:58px;flex:none}.marca strong{display:block;font-size:1.52rem;color:var(--verde);letter-spacing:-.045em;line-height:1.15}.marca small{font-size:.65rem;color:#c3d1de}.nav{display:flex;align-items:center;gap:32px;font-weight:700;font-size:.9rem;color:#dce7ef}.nav a:hover{color:var(--verde)}.botao{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;min-height:48px;border:1px solid transparent;border-radius:12px;font-weight:800;font-size:.9rem;transition:.2s}.botao:hover{transform:translateY(-2px)}.verde{background:var(--verde);color:var(--escuro)}.contorno{border-color:#ffffff50;color:#fff}.dark{background:var(--azul);color:white}
-.hero{background:radial-gradient(circle at 85% 15%,#314b6e 0%,transparent 36%),linear-gradient(125deg,var(--azul),var(--escuro));color:#fff;overflow:hidden}.heroGrid{padding:80px 0;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.tag{display:inline-flex;padding:9px 13px;border:1px solid #0df0a94c;border-radius:99px;color:var(--verde);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font:600 clamp(3.5rem,5.8vw,6rem)/1.04 'Playfair Display',Georgia,serif;letter-spacing:-.065em;margin:25px 0}.hero h1 em{font-style:normal;color:var(--verde)}.hero h1 small{display:block;font:600 clamp(1.25rem,2.4vw,2rem)/1.3 'DM Sans',sans-serif;letter-spacing:-.025em;margin-top:16px}.hero p{color:#d1dbe9;margin:0 0 26px;max-width:500px}.acoes{display:flex;flex-wrap:wrap;gap:12px}.pontos{font-size:.82rem;color:#d4deea;margin-top:29px}.photo{position:relative;padding:15px;border:1px solid #ffffff38;border-radius:24px;background:#ffffff12;box-shadow:0 30px 80px #00000030}.photo img{width:100%;height:auto;aspect-ratio:1.6;object-fit:cover;border-radius:15px}.photoTags{position:absolute;bottom:27px;left:28px;right:28px;display:flex;justify-content:space-between}.photoTags span{background:var(--escuro);color:white;border-radius:10px;padding:7px 17px;font-weight:800;font-size:.8rem}.photoTags span:last-child{background:var(--verde);color:var(--escuro)}
-.ribbon{background:var(--verde);color:var(--escuro)}.ribbon .wrap{padding:15px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;font-weight:800;letter-spacing:.02em}
-section{scroll-margin-top:20px}.section{padding:76px 0}.eyebrow{text-transform:uppercase;color:#00996e;letter-spacing:.15em;font-size:.75rem;font-weight:800}.title{font:600 clamp(2rem,3.6vw,3.1rem)/1.15 'Playfair Display',Georgia,serif;letter-spacing:-.04em;color:var(--azul);margin:12px 0}.intro{max-width:620px;color:var(--muted);margin:0 0 30px}.calc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);align-items:start;gap:25px}.groups{display:grid;gap:14px}.grupo{background:white;border:1px solid var(--linha);border-radius:19px;padding:22px;box-shadow:0 10px 35px #1f36500a}.ghead{display:flex;align-items:center;justify-content:space-between;gap:15px}.ghead h3{font-size:1.1rem;color:var(--azul);margin:0}.ghead p{color:var(--muted);font-size:.82rem;margin:3px 0 0}.step{display:flex;align-items:center;border:1px solid var(--linha);border-radius:12px;overflow:hidden;background:#f1f4f6;flex:none}.step button{width:36px;height:37px;border:0;background:transparent;color:var(--azul);font-size:1.3rem;font-weight:700}.step output{min-width:31px;text-align:center;font-weight:800}.items{margin-top:15px;display:grid;gap:12px}.item{background:#f6f8f9;border:1px solid var(--linha);padding:15px;border-radius:13px}.itemTop{color:var(--azul);font-size:.81rem;font-weight:800;margin-bottom:10px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field label{display:block;font-size:.72rem;font-weight:800;color:#627087;margin-bottom:5px}.field select{display:block;width:100%;height:43px;border:1px solid #d8e0e4;border-radius:9px;background:#fff;padding:8px;color:var(--texto);font-size:.81rem}.checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.checks label{background:white;border:1px solid #d8e0e4;border-radius:99px;padding:5px 9px;display:flex;gap:5px;align-items:center;font-size:.72rem}.checks input{accent-color:var(--azul)}.notes{font-size:.73rem;color:#7a6370;margin:9px 0 0}
-.resumo{background:var(--azul);border-radius:20px;padding:26px;color:white;position:sticky;top:18px;box-shadow:0 18px 45px #15284720}.resumo h3{margin:0 0 14px;color:var(--verde);font-size:1.02rem}.vazio{color:#ced9e8;font-size:.92rem}.linha{padding:11px 0;border-bottom:1px solid #ffffff1d;display:flex;gap:10px;justify-content:space-between;font-size:.83rem}.linha b{white-space:nowrap;text-align:right}.linha s{color:#a4b5ca;font-weight:400;font-size:.75rem}.totalLabel{margin-top:18px;color:#bac9d9;font-size:.8rem}.total{font-size:2.25rem;font-weight:800;letter-spacing:-.04em}.pix{border:1px solid #0df0a950;background:#0df0a912;border-radius:13px;padding:13px;margin-top:15px;color:#ecfff8;font-size:.8rem}.pix strong{font-size:1.35rem;color:var(--verde);display:block}.alerta{margin-top:12px;background:#fff7e6;border-radius:10px;padding:12px;color:#715421;font-size:.76rem}.resumo .botao{width:100%;margin-top:19px}.aviso{color:#bed0df;font-size:.73rem;margin:13px 0 0}
-.antes{background:white}.antesGrid{display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;gap:50px}.antesGrid p{color:var(--muted)}.imgBox{border-radius:22px;overflow:hidden;box-shadow:0 18px 50px #13264222}.imgBox img{width:100%;height:auto}.cities{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}.cities span{background:white;border:1px solid var(--linha);border-radius:99px;padding:10px 17px;font-size:.87rem;font-weight:700;color:var(--azul)}.footer{background:var(--escuro);color:#c9d6e5;padding:37px 0}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px;font-size:.88rem}.foot b{color:white}.foot a{color:var(--verde)}.mobileBar{display:none}
-@media(max-width:980px){.nav{display:none}.heroGrid{grid-template-columns:1fr;gap:35px}.hero h1{max-width:690px}.photo{max-width:760px}.calc{grid-template-columns:1fr}.resumo{position:static}.antesGrid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}@media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}.head{min-height:72px}.marca strong{font-size:1.25rem}.marca small{font-size:.55rem}.gota{width:39px;height:48px}.head>.botao{padding:10px 12px;min-height:40px;font-size:.75rem}.heroGrid{padding:53px 0}.hero h1{font-size:clamp(3.1rem,11vw,4.5rem)}.hero h1 small{font-size:1.3rem}.hero p{font-size:.91rem}.section{padding:54px 0}.grupo{padding:17px}.fields{grid-template-columns:1fr}.ghead h3{font-size:1rem}.ribbon .wrap{font-size:.75rem}.foot{grid-template-columns:1fr}.mobileBar{display:flex;position:fixed;bottom:0;left:0;right:0;gap:8px;padding:10px;background:#132642f5;z-index:15}.mobileBar .botao{flex:1;font-size:.79rem;padding:10px}.footer{padding-bottom:110px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.botao{transition:none}}
+:root {
+  --navy: #20375f;
+  --dark: #152a4b;
+  --mint: #0DF0A9;
+  --ink: #1a2943;
+  --muted: #61718b;
+  --cream: #f6f8f7;
+  --line: #e0e8ee;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.55 "DM Sans", Arial, sans-serif;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, select, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+h1, h2, h3, p { margin-top: 0; }
+
+.container {
+  width: min(1140px, calc(100% - 36px));
+  margin: auto;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 13px 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 800;
+  font-size: .9rem;
+  transition: transform .18s;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.primary {
+  background: var(--mint);
+  color: var(--dark);
+}
+
+.outline {
+  color: white;
+  border-color: #ffffff66;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--mint);
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+/* CABEÇALHO */
+header {
+  background: var(--dark);
+  color: #fff;
+}
+
+.header {
+  min-height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand svg {
+  width: 51px;
+  height: 59px;
+  flex: none;
+}
+
+.brand b {
+  font-size: 1.5rem;
+  color: var(--mint);
+  letter-spacing: -.04em;
+}
+
+.brand small {
+  display: block;
+  font-size: .7rem;
+  color: #cbd7e8;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: .9rem;
+}
+
+.nav a:hover { color: var(--mint); }
+
+/* HERO */
+.hero {
+  background:
+    radial-gradient(circle at 92% 7%, #31527a 0%, transparent 40%),
+    var(--navy);
+  color: white;
+  padding: 72px 0 82px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 52px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #0DF0A955;
+  padding: 8px 15px;
+  border-radius: 100px;
+  color: var(--mint);
+  font-size: .73rem;
+  letter-spacing: .13em;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.chip:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--mint);
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font: 600 clamp(3.1rem, 6vw, 5.8rem)/1.05
+    "Playfair Display", Georgia, serif;
+  letter-spacing: -.065em;
+  margin: 0 0 20px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--mint);
+}
+
+.hero h1 span {
+  display: block;
+  font: 500 clamp(1.4rem, 2.55vw, 2.25rem)/1.25
+    "DM Sans", Arial, sans-serif;
+  letter-spacing: -.04em;
+  margin-top: 18px;
+}
+
+.hero p {
+  color: #d2dfed;
+  font-size: 1.02rem;
+  max-width: 510px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.hero-photo {
+  background: #ffffff0e;
+  border: 1px solid #ffffff33;
+  border-radius: 23px;
+  padding: 14px;
+  box-shadow: 0 25px 60px #07152b55;
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+}
+
+.photo-caption {
+  font-size: .83rem;
+  color: #d5e0eb;
+  padding: 14px 5px 2px;
+}
+
+.photo-caption strong { color: var(--mint); }
+
+.strip {
+  background: var(--mint);
+  color: var(--dark);
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 12px;
+  letter-spacing: .045em;
+  font-size: .84rem;
+}
+
+.section { padding: 76px 0; }
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.intro h2,
+.showcase h2 {
+  font: 600 clamp(2.3rem, 4vw, 3.8rem)/1.15
+    "Playfair Display", Georgia, serif;
+  letter-spacing: -.04em;
+  color: var(--dark);
+  margin: 10px 0 0;
+}
+
+.intro p {
+  max-width: 400px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.intro em {
+  font-style: normal;
+  color: #0baf7f;
+}
+
+/* CALCULADORA */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(310px, .7fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.categories { display: grid; gap: 14px; }
+
+.category {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 10px 28px #16263c08;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.category-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.category-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  background: #e6fff5;
+  border-radius: 13px;
+  font-size: 1.2rem;
+}
+
+.category h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.category p {
+  font-size: .79rem;
+  color: var(--muted);
+  margin: 3px 0 0;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  background: #f3f7f8;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stepper button {
+  width: 39px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.stepper output {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.items {
+  display: grid;
+  gap: 12px;
+  margin-top: 17px;
+}
+
+.items:empty { display: none; }
+
+.item {
+  border: 1px solid #e2eaee;
+  background: #f8fafb;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.item-heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin-bottom: 13px;
+  color: var(--dark);
+  font-size: .86rem;
+}
+
+.item-heading small {
+  color: #04a575;
+  letter-spacing: .035em;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field label {
+  display: block;
+  font-size: .75rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #60708a;
+}
+
+.field.wide { grid-column: 1/-1; }
+
+select {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid #d7e1e8;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--dark);
+  padding: 10px;
+  font-size: .86rem;
+}
+
+.stain-section {
+  margin-top: 13px;
+  padding-top: 12px;
+  border-top: 1px solid #e2eaee;
+}
+
+.stain-section > label {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.stain-section input { accent-color: var(--navy); }
+
+.stains {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+
+.stains label {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 6px 9px;
+  border-radius: 9px;
+  background: white;
+  border: 1px solid var(--line);
+  font-size: .78rem;
+}
+
+/* RESULTADO */
+.quote {
+  background: var(--dark);
+  color: white;
+  border-radius: 23px;
+  padding: 26px;
+  position: sticky;
+  top: 18px;
+  box-shadow: 0 24px 48px #152a4b24;
+}
+
+.quote .tag { margin-bottom: 15px; }
+
+.quote h3 {
+  font: 600 1.85rem "Playfair Display", Georgia, serif;
+  margin: 0 0 18px;
+}
+
+.empty { color: #ccd6e7; }
+
+.quote ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quote li {
+  border-bottom: 1px solid #ffffff21;
+  padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: .84rem;
+}
+
+.quote li small {
+  display: block;
+  color: #b9c9df;
+}
+
+.quote li b {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.quote del {
+  display: block;
+  color: #a4b1c4;
+  font-size: .75rem;
+}
+
+.subtotal {
+  margin-top: 17px;
+  color: #bfcce0;
+  font-size: .78rem;
+}
+
+.total {
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.saving {
+  color: var(--mint);
+  font-size: .81rem;
+}
+
+.pix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: #0DF0A91b;
+  border: 1px solid #0DF0A956;
+  padding: 13px;
+  border-radius: 13px;
+  margin-top: 16px;
+  font-size: .84rem;
+}
+
+.pix strong {
+  color: var(--mint);
+  font-size: 1.3rem;
+}
+
+.notice {
+  border-radius: 11px;
+  padding: 11px 12px;
+  margin-top: 12px;
+  background: #fff4d7;
+  color: #674d13;
+  font-size: .81rem;
+}
+
+.quote .btn {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.quote-note {
+  font-size: .76rem;
+  color: #aebbd1;
+  margin: 13px 0 0;
+}
+
+/* RESULTADOS */
+.showcase { background: #fff; }
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.showcase p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.showcase img {
+  border-radius: 20px;
+  box-shadow: 0 22px 45px #152a4b22;
+  width: 100%;
+  height: auto;
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin: 24px 0;
+}
+
+.cities span {
+  padding: 10px 17px;
+  border: 1px solid #dfe9ee;
+  background: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: .86rem;
+}
+
+.bottom {
+  background: var(--dark);
+  color: #d3dded;
+  padding: 40px 0;
+}
+
+.footer {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer strong { color: var(--mint); }
+
+.footer a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.mobile-actions { display: none; }
+
+/* RESPONSIVIDADE */
+@media(max-width:900px) {
+  .hero-grid, .layout, .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid { gap: 30px; }
+  .intro { display: block; }
+  .intro p { margin-top: 12px; }
+  .quote { position: static; }
+  .nav { display: none; }
+  .hero { padding: 47px 0 58px; }
+  .section { padding: 55px 0; }
+}
+
+@media(max-width:600px) {
+  .container { width: min(100% - 28px, 1140px); }
+  .brand svg { width: 44px; height: 52px; }
+  .brand b { font-size: 1.25rem; }
+  .header { min-height: 74px; }
+  .header .btn { padding: 10px; }
+  .hero h1 { font-size: 3.2rem; }
+  .hero h1 span { font-size: 1.3rem; }
+  .hero-photo img { aspect-ratio: 1.4; }
+  .actions { flex-direction: column; }
+  .actions a { width: 100%; }
+  .category { padding: 17px; }
+  .fields { grid-template-columns: 1fr; }
+  .field.wide { grid-column: auto; }
+  .footer { display: block; }
+  .footer > * { margin-bottom: 10px; }
+  .mobile-actions {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: #152a4bf5;
+    padding: 10px;
+    gap: 10px;
+  }
+  .mobile-actions a { flex: 1; }
+  .bottom { padding-bottom: 95px; }
+}
 </style>
 </head>
+
 <body>
-<header class="top"><div class="wrap head"><a class="marca" href="#inicio" aria-label="Clean Up - início">
-<svg class="gota" viewBox="88 38 112 145" aria-hidden="true"><g transform="matrix(1,0,0,-1,0,287.9997)" fill="#0DF0A9"><path d="M180.4487 152.1556H187.3298C187.7287 154.6231 187.9359 157.1547 187.9359 159.7348 187.9359 165.996 188.0425 146.5968 186.0911 152.1556H180.4487C182.8536 146.1643 181.1548 165.6578 181.1548 159.7348 181.1548 157.1632 180.9159 154.6285 180.4487 152.1556M180.4487 152.1556H187.3298C183.7043 129.7202 164.2476 112.5879 140.7889 112.5879 114.7499 112.5879 93.6417 133.6963 93.6417 159.7348 93.6417 193.595 127.0962 215.6298 140.7889 242.6301V242.6298C151.9498 220.6222 176.2393 201.9138 184.8407 177.4117H177.605C176.4859 180.1998 175.0938 183.0379 173.4174 185.9644 168.537 194.4845 161.7931 202.6959 155.2714 210.6366 150.2816 216.7126 145.1789 222.9256 140.7889 229.413 136.3986 222.9253 131.2963 216.7126 126.3061 210.6366 119.7845 202.6959 113.0409 194.4845 108.1602 185.9644 102.8812 176.7492 100.4224 168.4145 100.4224 159.7348 100.4224 148.9527 104.6217 138.8157 112.2457 131.1917 119.8695 123.5676 130.0065 119.3689 140.7889 119.3689 151.5711 119.3689 161.708 123.5676 169.3321 131.1917 175.1377 136.9973 178.9571 144.2602 180.4487 152.1556"/><path d="M174.1742 146.4216 182.2555 150.9429C182.9296 151.3179 183.7684 151.23 184.35 150.7235L191.3187 144.6256C192.757 143.3687 194.9168 144.8836 194.224 146.6634L186.5619 166.356C186.0233 167.741 184.1451 167.938 183.3313 166.6942L171.7546 149.0173C170.708 147.4197 172.5069 145.4902 174.1742 146.4216"/></g></svg>
-<span><strong>Clean Up</strong><small>Limpeza e impermeabilização</small></span></a>
-<nav class="nav"><a href="#servicos">Orçamento</a><a href="#resultados">Resultados</a><a href="#atendimentos">Atendimentos</a></nav><a class="botao verde" data-wa href="#">WhatsApp ↗</a></div></header>
-<main id="inicio"><section class="hero"><div class="wrap heroGrid"><div><span class="tag">Campanha especial • novembro 2026</span><h1>Novembro<br><em>Clean.</em><small>Preço especial em combos de sofá até <em>30/11.</em></small></h1><p>Seu estofado renovado com cuidado, tecnologia e atenção aos detalhes. Simule os valores de higienização e impermeabilização, sem compromisso.</p><div class="acoes"><a class="botao verde" href="#servicos">Calcular orçamento ↗</a><a class="botao contorno" data-wa href="#">Falar com a Clean Up</a></div><div class="pontos">Atendimento na região do Vale dos Sinos · Avaliação por foto</div></div>
-<div class="photo"><img id="fotoPrincipal" src="data:image/webp;base64,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" alt="Antes e depois real de sofá higienizado pela Clean Up"><div class="photoTags"><span>Antes</span><span>Depois</span></div></div></div></section>
-<div class="ribbon"><div class="wrap"><span>✦ PREÇO ESPECIAL EM COMBOS DE SOFÁ</span><span>✦ ATÉ 30 DE NOVEMBRO</span><span>✦ MONTE SEU ORÇAMENTO ONLINE</span></div></div>
-<section class="section" id="servicos"><div class="wrap"><span class="eyebrow">Prático e personalizado</span><h2 class="title">Monte sua estimativa.</h2><p class="intro">Escolha os móveis e informe o tecido e as manchas de cada peça. Os valores disponíveis aparecem automaticamente e você envia o pedido pelo WhatsApp.</p><div class="calc"><div class="groups" id="grupos"></div><aside class="resumo"><h3>Seu orçamento</h3><div id="resumoDados"><p class="vazio">Adicione um móvel para visualizar os valores.</p></div><a id="enviar" class="botao verde" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp ↗</a><p class="aviso">Valores estimados sujeitos à avaliação do estofado por foto. Serviços com preço sob consulta serão confirmados no atendimento.</p></aside></div></div></section>
-<section class="section antes" id="resultados"><div class="wrap antesGrid"><div><span class="eyebrow">Resultados reais</span><h2 class="title">O cuidado aparece nos detalhes.</h2><p>Veja o antes e depois de um sofá familiar. Cada material exige uma avaliação própria para definir os cuidados e o resultado possível.</p><a class="botao dark" href="#servicos">Fazer minha estimativa</a></div><div class="imgBox"><img id="fotoResultados" alt="Antes e depois de sofá higienizado"></div></div></section>
-<section class="section" id="atendimentos"><div class="wrap"><span class="eyebrow">Vale dos Sinos e região</span><h2 class="title">Atendimentos</h2><p class="intro">Novo Hamburgo, Campo Bom, Estância Velha, São Leopoldo, Dois Irmãos e Ivoti.</p><div class="cities" id="cidadesLista"></div><a class="botao dark" data-wa href="#">Solicitar atendimento ↗</a></div></section></main>
-<footer class="footer"><div class="wrap foot"><div><b>Clean Up</b><br>Limpeza e impermeabilização de estofados<br>Vale dos Sinos e região</div><div><b>Contato</b><br><a data-wa href="#">(51) 99421-6493</a><br>João Lucas</div><div><b>Instagram</b><br><a href="https://www.instagram.com/cleanup_nh/" target="_blank" rel="noopener">@cleanup_nh ↗</a></div></div></footer>
-<div class="mobileBar"><a class="botao contorno" href="#servicos">Calcular</a><a class="botao verde" data-wa href="#">WhatsApp</a></div>
+
+<header>
+  <div class="container header">
+
+    <a class="brand" href="#inicio" aria-label="Clean Up — início">
+      <svg viewBox="0 0 64 72" role="img" aria-label="Logo Clean Up">
+        <path
+          d="M32 4C23 17 8 34 8 46a24 24 0 0 0 48 0c0-7-5-17-10-24"
+          fill="none"
+          stroke="#0DF0A9"
+          stroke-width="4.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="m44 20 4 9 7-7"
+          fill="none"
+          stroke="#0DF0A9"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <span>
+        <b>Clean Up</b>
+        <small>Limpeza e impermeabilização</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#servicos">Orçamento</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#atendimentos">Atendimentos</a>
+    </nav>
+
+    <a class="btn primary" data-wa>WhatsApp ↗</a>
+
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <span class="chip">Campanha especial de novembro</span>
+
+        <h1>
+          Novembro <em>Clean.</em>
+          <span>
+            Preço especial em combos de sofá
+            <em>até 30/11.</em>
+          </span>
+        </h1>
+
+        <p>
+          Renove seus estofados com higienização profissional
+          e proteção. Monte sua estimativa e encaminhe os
+          detalhes diretamente para a Clean Up.
+        </p>
+
+        <div class="actions">
+          <a href="#servicos" class="btn primary">
+            Montar meu orçamento ↗
+          </a>
+          <a class="btn outline" data-wa>
+            Pedir atendimento
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          src="antes-depois.png"
+          alt="Antes e depois de sofá higienizado pela Clean Up"
+        >
+        <div class="photo-caption">
+          <strong>Resultado real</strong> • Sofá familiar de linho
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="strip">
+    ✦ COMBOS DE SOFÁ COM PREÇO ESPECIAL ATÉ 30/11
+    &nbsp; ✦ ATENDIMENTO NO VALE DOS SINOS
+  </div>
+
+  <section class="section" id="servicos">
+    <div class="container">
+
+      <div class="intro">
+        <div>
+          <span class="tag" style="color:#0aab7c">
+            Orçamento online
+          </span>
+          <h2>
+            Seu estofado merece <em>cuidado.</em>
+          </h2>
+        </div>
+
+        <p>
+          Adicione os móveis, escolha o tecido e informe se há manchas.
+          A estimativa é atualizada automaticamente.
+        </p>
+      </div>
+
+      <div class="layout">
+
+        <div class="categories" id="categorias"></div>
+
+        <aside class="quote" aria-live="polite">
+          <span class="tag">Novembro Clean</span>
+          <h3>Sua estimativa</h3>
+
+          <div id="resultado">
+            <p class="empty">
+              Adicione um móvel para calcular.
+            </p>
+          </div>
+
+          <a
+            class="btn primary"
+            id="enviar"
+            target="_blank"
+            rel="noopener"
+          >
+            Enviar pelo WhatsApp ↗
+          </a>
+
+          <p class="quote-note">
+            Valor estimado. O orçamento final é confirmado
+            após avaliação das fotos.
+          </p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section showcase" id="resultados">
+    <div class="container showcase-grid">
+
+      <div>
+        <span class="tag" style="color:#0aab7c">
+          Antes e depois
+        </span>
+
+        <h2>O resultado está nos detalhes.</h2>
+
+        <p>
+          Veja o antes e depois de um sofá familiar.
+          Cada estofado recebe uma avaliação individual
+          conforme seu tecido, uso e tipo de mancha.
+        </p>
+
+        <a class="btn primary" href="#servicos">
+          Quero uma estimativa ↗
+        </a>
+      </div>
+
+      <img
+        src="antes-depois.png"
+        alt="Comparação de antes e depois do sofá"
+      >
+
+    </div>
+  </section>
+
+  <section class="section" id="atendimentos">
+    <div class="container">
+
+      <span class="tag" style="color:#0aab7c">
+        Área de atuação
+      </span>
+
+      <h2 style="font:600 2.7rem 'Playfair Display',serif;color:var(--dark);margin:10px 0">
+        Atendimentos
+      </h2>
+
+      <p>Atendemos as seguintes cidades e região:</p>
+
+      <div class="cities" id="cidadesLista"></div>
+
+      <a class="btn primary" data-wa>
+        Solicitar atendimento ↗
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="bottom">
+  <div class="container footer">
+
+    <div>
+      <strong>Clean Up</strong><br>
+      Higienização e impermeabilização de estofados.
+    </div>
+
+    <div>
+      <b>Contato</b><br>
+      <a data-wa>(51) 99421-6493</a> • João Lucas
+    </div>
+
+    <div>
+      <b>Instagram</b><br>
+      <a href="https://instagram.com/cleanup_nh" target="_blank" rel="noopener">
+        @cleanup_nh
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<div class="mobile-actions">
+  <a class="btn outline" href="#servicos">Calcular</a>
+  <a class="btn primary" data-wa>WhatsApp ↗</a>
+</div>
+
 <script>
-/* Ajuste os preços aqui, se necessário. 'null' significa sob consulta. */
-const TELEFONE='5551994216493', DESCONTO_PIX=.06;
-const CIDADES=['Novo Hamburgo','Campo Bom','Estância Velha','São Leopoldo','Dois Irmãos','Ivoti'];
-const TECIDOS=['Não sei','Linho','Suede','Veludo','Couro','Sintético (courino)','Outro'];
-const MANCHAS=['Gordura','Sujeira acumulada','Pelos de pet','Comida','Café','Vinho','Suco','Urina','Mancha antiga','Outra'];
-const CATALOGO={
- sofa:{nome:'Sofás',max:6,tipos:{s2:['Sofá 2 m retrátil',230,460,420],s25r:['Sofá 2,5 m retrátil',250,490,450],s25f:['Sofá 2,5 m fixo',190,390,360],scama:['Sofá-cama',230,430,395]}},
- poltrona:{nome:'Poltronas',max:6,tipos:{fixa:['Poltrona fixa',80,null],recl:['Poltrona reclinável',110,null]}},
- colchao:{nome:'Colchões',max:6,tipos:{sol:['Colchão solteiro',160,null],cas:['Colchão casal',180,null],queen:['Colchão queen',200,null],king:['Colchão king',230,null]}},
- cadeira:{nome:'Cadeiras',max:16,tipos:{assento:['Assento estofado',30,60],completo:['Assento e encosto',35,70]}},
- banqueta:{nome:'Banquetas',max:16,tipos:{assento:['Assento estofado',30,60],completo:['Assento e encosto',35,70]}}
+// CONFIGURAÇÕES — EDITE VALORES AQUI
+const WHATSAPP = '5551994216493';
+const PIX_DESCONTO = .06;
+
+const CIDADES = [
+  'Novo Hamburgo',
+  'Campo Bom',
+  'Estância Velha',
+  'São Leopoldo',
+  'Dois Irmãos',
+  'Ivoti'
+];
+
+const CATALOGO = {
+  sofa: {
+    nome: 'Sofá',
+    icone: '▤',
+    max: 6,
+    tipos: {
+      s2: {
+        nome: 'Sofá 2 m retrátil',
+        hig: 230,
+        combo: 460,
+        promo: 420
+      },
+      s25r: {
+        nome: 'Sofá 2,5 m retrátil',
+        hig: 250,
+        combo: 490,
+        promo: 450
+      },
+      s25f: {
+        nome: 'Sofá 2,5 m fixo',
+        hig: 190,
+        combo: 390,
+        promo: 360
+      },
+      sc: {
+        nome: 'Sofá-cama',
+        hig: 230,
+        combo: 430,
+        promo: 395
+      }
+    }
+  },
+
+  poltrona: {
+    nome: 'Poltrona',
+    icone: '◫',
+    max: 6,
+    tipos: {
+      fixa: {
+        nome: 'Poltrona fixa',
+        hig: 80,
+        combo: null
+      },
+      rec: {
+        nome: 'Poltrona reclinável',
+        hig: 110,
+        combo: null
+      }
+    }
+  },
+
+  colchao: {
+    nome: 'Colchões',
+    icone: '▧',
+    max: 6,
+    tipos: {
+      sol: {
+        nome: 'Colchão solteiro',
+        hig: 160,
+        combo: null
+      },
+      cas: {
+        nome: 'Colchão casal',
+        hig: 180,
+        combo: null
+      },
+      q: {
+        nome: 'Colchão queen',
+        hig: 200,
+        combo: null
+      },
+      k: {
+        nome: 'Colchão king',
+        hig: 230,
+        combo: null
+      }
+    }
+  },
+
+  cadeira: {
+    nome: 'Cadeiras',
+    icone: '▥',
+    max: 16,
+    tipos: {
+      a: {
+        nome: 'Assento estofado',
+        hig: 30,
+        combo: 60
+      },
+      ae: {
+        nome: 'Assento e encosto',
+        hig: 35,
+        combo: 70
+      }
+    }
+  },
+
+  banqueta: {
+    nome: 'Banquetas',
+    icone: '◩',
+    max: 16,
+    tipos: {
+      a: {
+        nome: 'Assento estofado',
+        hig: 30,
+        combo: 60
+      },
+      ae: {
+        nome: 'Assento e encosto',
+        hig: 35,
+        combo: 70
+      }
+    }
+  }
 };
-const ESTADO=Object.fromEntries(Object.keys(CATALOGO).map(k=>[k,[]]));
-const dinheiro=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-let sequencia=0;
-const novaPeca=cat=>({id:++sequencia,tipo:Object.keys(CATALOGO[cat].tipos)[0],servico:'hig',tecido:'Não sei',temMancha:false,manchas:[]});
-const urlWhats=msg=>'https://wa.me/'+TELEFONE+'?text='+encodeURIComponent(msg);
-document.querySelectorAll('[data-wa]').forEach(a=>{a.href=urlWhats('Olá! Vim pelo site da Clean Up e gostaria de um orçamento.');a.target='_blank';a.rel='noopener'});
-document.getElementById('fotoResultados').src=document.getElementById('fotoPrincipal').src;
-document.getElementById('cidadesLista').innerHTML=CIDADES.map(c=>'<span>'+c+'</span>').join('');
-let cidade=CIDADES[0];
-function iniciar(){
- const root=document.getElementById('grupos');
- root.innerHTML=Object.entries(CATALOGO).map(([key,c])=>`<div class="grupo" data-cat="${key}"><div class="ghead"><div><h3>${c.nome}</h3><p>Adicione até ${c.max} ${c.nome.toLowerCase()}</p></div><div class="step"><button type="button" data-add="-1" aria-label="Remover ${c.nome}">−</button><output data-qtd>0</output><button type="button" data-add="1" aria-label="Adicionar ${c.nome}">+</button></div></div><div class="items"></div></div>`).join('')+
- `<div class="grupo"><div class="ghead"><div><h3>Cidade do atendimento</h3><p>Selecione a cidade para enviar o pedido</p></div></div><div class="field" style="margin-top:14px"><label for="cidade">Cidade</label><select id="cidade">${CIDADES.map(x=>`<option>${x}</option>`).join('')}</select></div></div>`;
- root.querySelector('#cidade').addEventListener('change',e=>{cidade=e.target.value;calcular()});
- root.addEventListener('click',e=>{const botao=e.target.closest('[data-add]');if(!botao)return;const card=botao.closest('[data-cat]');const cat=card.dataset.cat,delta=Number(botao.dataset.add);const arr=ESTADO[cat];if(delta>0&&arr.length<CATALOGO[cat].max)arr.push(novaPeca(cat));if(delta<0)arr.pop();render(cat);calcular()});
- root.addEventListener('change',e=>{const card=e.target.closest('[data-cat]'),itemBox=e.target.closest('[data-id]');if(!card||!itemBox)return;const peca=ESTADO[card.dataset.cat].find(p=>p.id===Number(itemBox.dataset.id));if(!peca)return;const campo=e.target.dataset.field;
- if(campo==='manchas'){peca.manchas=e.target.checked?[...peca.manchas,e.target.value]:peca.manchas.filter(v=>v!==e.target.value)}
- else if(campo==='temMancha'){peca.temMancha=e.target.value==='sim';if(!peca.temMancha)peca.manchas=[];render(card.dataset.cat)}
- else if(campo){peca[campo]=e.target.value;if(campo==='tipo'||campo==='servico')render(card.dataset.cat)}calcular()});
- calcular();
+
+const TECIDOS = [
+  'Não sei informar',
+  'Linho',
+  'Suede',
+  'Veludo',
+  'Couro',
+  'Sintético (courino)',
+  'Outro tecido'
+];
+
+const MANCHAS = [
+  'Gordura',
+  'Sujeira acumulada',
+  'Pelos de pet',
+  'Comida',
+  'Café',
+  'Vinho',
+  'Suco',
+  'Urina',
+  'Mancha antiga',
+  'Outras'
+];
+
+const state = Object.fromEntries(
+  Object.keys(CATALOGO).map(k => [k, []])
+);
+
+const money = n => n.toLocaleString('pt-BR', {
+  style: 'currency',
+  currency: 'BRL'
+});
+
+const wa = msg =>
+  'https://wa.me/' + WHATSAPP +
+  '?text=' + encodeURIComponent(msg);
+
+const escape = s => String(s).replace(
+  /[&<>"']/g,
+  c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[c])
+);
+
+const service = s =>
+  s === 'combo'
+    ? 'higienização e impermeabilização'
+    : 'higienização';
+
+function newItem(cat) {
+  return {
+    tipo: Object.keys(CATALOGO[cat].tipos)[0],
+    svc: 'hig',
+    tecido: 'Não sei informar',
+    manchou: false,
+    manchas: []
+  };
 }
-function render(cat){const card=document.querySelector(`[data-cat="${cat}"]`),arr=ESTADO[cat],tipos=CATALOGO[cat].tipos;
- card.querySelector('[data-qtd]').textContent=arr.length;
- card.querySelector('[data-add="-1"]').disabled=!arr.length;
- card.querySelector('[data-add="1"]').disabled=arr.length>=CATALOGO[cat].max;
- card.querySelector('.items').innerHTML=arr.map((p,i)=>{const semPreco=tipos[p.tipo][2]===null;return `<div class="item" data-id="${p.id}"><div class="itemTop">${({sofa:'Sofá',poltrona:'Poltrona',colchao:'Colchão',cadeira:'Cadeira',banqueta:'Banqueta'})[cat]} ${i+1}</div><div class="fields">
- <div class="field"><label>Tipo do móvel</label><select data-field="tipo">${Object.entries(tipos).map(([key,v])=>`<option value="${key}" ${p.tipo===key?'selected':''}>${v[0]}</option>`).join('')}</select></div>
- <div class="field"><label>Tecido / estofado</label><select data-field="tecido">${TECIDOS.map(t=>`<option ${p.tecido===t?'selected':''}>${t}</option>`).join('')}</select></div>
- <div class="field"><label>Serviço</label><select data-field="servico"><option value="hig" ${p.servico==='hig'?'selected':''}>higienização</option><option value="combo" ${p.servico==='combo'?'selected':''}>higienização e impermeabilização</option></select>${semPreco&&p.servico==='combo'?'<p class="notes">Impermeabilização: valor sob consulta</p>':''}</div>
- <div class="field"><label>Possui manchas?</label><select data-field="temMancha"><option value="nao" ${!p.temMancha?'selected':''}>Não</option><option value="sim" ${p.temMancha?'selected':''}>Sim</option></select></div></div>
- ${p.temMancha?`<div class="field" style="margin-top:12px"><label>Marque os tipos de manchas</label><div class="checks">${MANCHAS.map(m=>`<label><input type="checkbox" data-field="manchas" value="${m}" ${p.manchas.includes(m)?'checked':''}>${m}</label>`).join('')}</div></div>`:''}
- </div>`}).join('');}
-function calcular(){let subtotal=0,tabela=0,pendente=false,linhas=[],mensagens=[],delicado=false;
- for(const [cat,arr] of Object.entries(ESTADO)){for(const p of arr){const dados=CATALOGO[cat].tipos[p.tipo],nome=dados[0];const combo=p.servico==='combo';let preco=combo?dados[2]:dados[1];let precoTabela=preco;if(cat==='sofa'&&combo){precoTabela=dados[2];preco=dados[3]}
- const descricao=combo?'higienização e impermeabilização':'higienização';const rotulo=`${nome} (${descricao})`;if(preco===null){pendente=true;linhas.push(`<div class="linha"><span>${rotulo}</span><b>Sob consulta</b></div>`)}else{subtotal+=preco;tabela+=precoTabela;linhas.push(`<div class="linha"><span>${rotulo}</span><b>${precoTabela>preco?`<s>${dinheiro(precoTabela)}</s><br>`:''}${dinheiro(preco)}</b></div>`)}
- mensagens.push(`- ${rotulo}: ${preco===null?'sob consulta':dinheiro(preco)}\n  Tecido: ${p.tecido}\n  Manchas: ${p.temMancha?(p.manchas.join(', ')||'sim, não especificadas'):'não'}`);if(['Couro','Suede'].includes(p.tecido))delicado=true;
- }}
- const body=document.getElementById('resumoDados'),enviar=document.getElementById('enviar');if(!mensagens.length){body.innerHTML='<p class="vazio">Adicione um móvel para visualizar os valores.</p>';enviar.href=urlWhats('Olá! Quero um orçamento da Clean Up.');return}
- const pix=subtotal*(1-DESCONTO_PIX);body.innerHTML=linhas.join('')+`<div class="totalLabel">${pendente?'Subtotal dos serviços com preço disponível':'Total estimado'}</div><div class="total">${subtotal>0?dinheiro(subtotal):'Sob consulta'}</div>${subtotal>0?`<div class="pix">Pix ou dinheiro • 6% de desconto<strong>${dinheiro(Math.round(pix*100)/100)}</strong></div>`:''}${pendente?'<div class="alerta">Há serviços sob consulta que ainda não estão incluídos no subtotal.</div>':''}${delicado?'<div class="alerta">Couro e suede exigem avaliação específica antes da confirmação.</div>':''}<p class="aviso">Condição promocional de combos de sofá até 30/11. Valores sujeitos à avaliação.</p>`;
- const msg=`Olá! Fiz uma estimativa no site da Clean Up (Novembro Clean).\n\n${mensagens.join('\n\n')}\n\nCidade: ${cidade}\n${pendente?'Subtotal (sem os itens sob consulta)':'Total estimado'}: ${subtotal>0?dinheiro(subtotal):'sob consulta'}${subtotal>0?'\nPix/dinheiro sobre valores disponíveis: '+dinheiro(Math.round(pix*100)/100):''}\n\nPosso enviar fotos para confirmar o orçamento?`;
- enviar.href=urlWhats(msg);
+
+function current(cat, item) {
+  return CATALOGO[cat].tipos[item.tipo];
 }
-iniciar();
+
+function price(cat, item) {
+  const p = current(cat, item);
+
+  if (item.svc === 'combo') {
+    if (p.combo === null) {
+      return {
+        pending: true,
+        valor: 0,
+        tabela: 0
+      };
+    }
+
+    return {
+      pending: false,
+      valor: cat === 'sofa' ? p.promo : p.combo,
+      tabela: p.combo
+    };
+  }
+
+  return {
+    pending: false,
+    valor: p.hig,
+    tabela: p.hig
+  };
+}
+
+const categories = document.querySelector('#categorias');
+
+for (const [key, cat] of Object.entries(CATALOGO)) {
+  categories.insertAdjacentHTML('beforeend', `
+    <section class="category" data-cat="${key}">
+      <div class="category-header">
+        <div class="category-title">
+          <span class="category-icon">${cat.icone}</span>
+          <div>
+            <h3>${cat.nome}</h3>
+            <p>Selecione seus móveis e os detalhes</p>
+          </div>
+        </div>
+
+        <div class="stepper">
+          <button type="button" data-step="-1">−</button>
+          <output>0</output>
+          <button type="button" data-step="1">+</button>
+        </div>
+      </div>
+
+      <div class="items"></div>
+    </section>
+  `);
+}
+
+function render(cat) {
+  const card = document.querySelector(`[data-cat="${cat}"]`);
+  const arr = state[cat];
+  const c = CATALOGO[cat];
+
+  card.querySelector('output').textContent = arr.length;
+
+  let bs = card.querySelectorAll('[data-step]');
+  bs[0].disabled = arr.length === 0;
+  bs[1].disabled = arr.length >= c.max;
+
+  card.querySelector('.items').innerHTML = arr.map((item, i) => {
+    const p = current(cat, item);
+
+    const tipos = Object.entries(c.tipos).map(([k, v]) => `
+      <option value="${k}" ${item.tipo === k ? 'selected' : ''}>
+        ${escape(v.nome)}
+      </option>
+    `).join('');
+
+    const tecidos = TECIDOS.map(t => `
+      <option ${item.tecido === t ? 'selected' : ''}>
+        ${escape(t)}
+      </option>
+    `).join('');
+
+    const manchas = MANCHAS.map(t => `
+      <label>
+        <input
+          type="checkbox"
+          data-field="manchas"
+          value="${escape(t)}"
+          ${item.manchas.includes(t) ? 'checked' : ''}
+        >
+        ${escape(t)}
+      </label>
+    `).join('');
+
+    return `
+      <div class="item" data-index="${i}">
+        <div class="item-heading">
+          <span>${escape(c.nome)} ${i + 1}</span>
+          <small>
+            ${cat === 'sofa' ? 'NOVEMBRO CLEAN' : 'PERSONALIZADO'}
+          </small>
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <label>Modelo</label>
+            <select data-field="tipo">${tipos}</select>
+          </div>
+
+          <div class="field">
+            <label>Tecido do estofado</label>
+            <select data-field="tecido">${tecidos}</select>
+          </div>
+
+          <div class="field wide">
+            <label>Serviço</label>
+            <select data-field="svc">
+              <option
+                value="hig"
+                ${item.svc === 'hig' ? 'selected' : ''}
+              >
+                higienização
+              </option>
+
+              <option
+                value="combo"
+                ${item.svc === 'combo' ? 'selected' : ''}
+              >
+                higienização e impermeabilização
+                ${p.combo === null ? ' — sob consulta' : ''}
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="stain-section">
+          <label>
+            <input
+              type="checkbox"
+              data-field="manchou"
+              ${item.manchou ? 'checked' : ''}
+            >
+            O estofado possui manchas?
+          </label>
+
+          ${item.manchou
+            ? `<div class="stains">${manchas}</div>`
+            : ''
+          }
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function calculate() {
+  const itens = [];
+  let total = 0;
+  let tabela = 0;
+  let pending = 0;
+  let warnings = false;
+
+  for (const cat of Object.keys(CATALOGO)) {
+    for (const item of state[cat]) {
+      const product = current(cat, item);
+      const pr = price(cat, item);
+
+      itens.push({item, product, pr});
+      total += pr.valor;
+      tabela += pr.tabela;
+
+      if (pr.pending) pending++;
+
+      if (
+        item.manchou ||
+        ['Couro', 'Suede'].includes(item.tecido)
+      ) {
+        warnings = true;
+      }
+    }
+  }
+
+  const area = document.querySelector('#resultado');
+  const send = document.querySelector('#enviar');
+
+  if (!itens.length) {
+    area.innerHTML = `
+      <p class="empty">
+        Adicione um móvel para ver sua estimativa.
+      </p>
+    `;
+
+    send.href = wa(
+      'Olá! Quero um orçamento da Clean Up.'
+    );
+    return;
+  }
+
+  const pix = +(
+    total * (1 - PIX_DESCONTO)
+  ).toFixed(2);
+
+  area.innerHTML = `
+    <ul>
+      ${itens.map(({item, product, pr}) => `
+        <li>
+          <span>
+            ${escape(product.nome)}
+            <small>
+              ${service(item.svc)} ·
+              ${escape(item.tecido)}
+              ${item.manchou ? ' · com manchas' : ''}
+            </small>
+          </span>
+
+          <b>
+            ${pr.pending
+              ? 'Sob consulta'
+              : `
+                ${pr.tabela > pr.valor
+                  ? `<del>${money(pr.tabela)}</del>`
+                  : ''
+                }
+                ${money(pr.valor)}
+              `
+            }
+          </b>
+        </li>
+      `).join('')}
+    </ul>
+
+    <div class="subtotal">
+      ${pending ? 'Subtotal precificado' : 'Total estimado'}
+    </div>
+
+    <div class="total">${money(total)}</div>
+
+    ${tabela > total
+      ? `<div class="saving">
+           Economia nos combos: ${money(tabela - total)}
+         </div>`
+      : ''
+    }
+
+    ${total
+      ? `<div class="pix">
+           <span>Pix ou dinheiro<br>6% de desconto</span>
+           <strong>${money(pix)}</strong>
+         </div>`
+      : ''
+    }
+
+    ${pending
+      ? `<div class="notice">
+           ${pending} serviço(s) sob consulta
+           não entram no subtotal.
+         </div>`
+      : ''
+    }
+
+    ${warnings
+      ? `<div class="notice">
+           Manchas e tecidos delicados exigem
+           avaliação por foto.
+         </div>`
+      : ''
+    }
+
+    <p class="quote-note">
+      Cartão com juros: até 6x a partir de R$ 600,
+      8x a partir de R$ 800 e 10x a partir de R$ 1.000.
+    </p>
+  `;
+
+  let msg =
+    'Olá! Fiz uma estimativa no site da Clean Up — Novembro Clean.\n\n';
+
+  for (const {item, product, pr} of itens) {
+    msg += `• ${product.nome} — ${service(item.svc)}\n`;
+    msg += `  Tecido: ${item.tecido}\n`;
+
+    msg += `  Manchas: ${
+      item.manchou
+        ? (item.manchas.join(', ') || 'sim, não especificadas')
+        : 'não'
+    }\n`;
+
+    msg += `  Valor: ${
+      pr.pending ? 'sob consulta' : money(pr.valor)
+    }\n`;
+  }
+
+  msg += `\nCidade: ${document.querySelector('#cidade').value}\n`;
+
+  msg += pending
+    ? `Subtotal: ${money(total)}; ${pending} serviço(s) sob consulta.`
+    : `Estimativa: ${money(total)}. Pix/dinheiro: ${money(pix)}.`;
+
+  msg += '\nPosso enviar as fotos para confirmar o orçamento?';
+
+  send.href = wa(msg);
+}
+
+for (const cat of Object.keys(CATALOGO)) {
+  const card = document.querySelector(`[data-cat="${cat}"]`);
+
+  card.addEventListener('click', e => {
+    const b = e.target.closest('[data-step]');
+    if (!b) return;
+
+    const v = Number(b.dataset.step);
+
+    if (
+      v === 1 &&
+      state[cat].length < CATALOGO[cat].max
+    ) {
+      state[cat].push(newItem(cat));
+    }
+
+    if (v === -1) {
+      state[cat].pop();
+    }
+
+    render(cat);
+    calculate();
+  });
+
+  card.addEventListener('change', e => {
+    const input = e.target.closest('[data-field]');
+    if (!input) return;
+
+    const box = input.closest('[data-index]');
+    if (!box) return;
+
+    const item = state[cat][Number(box.dataset.index)];
+    const field = input.dataset.field;
+
+    if (field === 'manchas') {
+      if (
+        input.checked &&
+        !item.manchas.includes(input.value)
+      ) {
+        item.manchas.push(input.value);
+      }
+
+      if (!input.checked) {
+        item.manchas = item.manchas.filter(
+          t => t !== input.value
+        );
+      }
+    } else if (field === 'manchou') {
+      item.manchou = input.checked;
+
+      if (!item.manchou) {
+        item.manchas = [];
+      }
+
+      render(cat);
+    } else {
+      item[field] = input.value;
+
+      if (field === 'tipo') {
+        render(cat);
+      }
+    }
+
+    calculate();
+  });
+
+  render(cat);
+}
+
+const cidades = document.querySelector('#cidadesLista');
+
+cidades.innerHTML = CIDADES.map(
+  c => `<span>${c}</span>`
+).join('');
+
+const selectCidade = document.createElement('section');
+selectCidade.className = 'category';
+
+selectCidade.innerHTML = `
+  <div class="category-header">
+    <div class="category-title">
+      <span class="category-icon">⌖</span>
+      <div>
+        <h3>Sua cidade</h3>
+        <p>Escolha onde será o atendimento</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="field" style="margin-top:14px">
+    <label for="cidade">Cidade</label>
+
+    <select id="cidade">
+      ${CIDADES.map(c => `<option>${c}</option>`).join('')}
+    </select>
+  </div>
+`;
+
+categories.appendChild(selectCidade);
+
+document.querySelector('#cidade')
+  .addEventListener('change', calculate);
+
+document.querySelectorAll('[data-wa]').forEach(a => {
+  a.href = wa(
+    'Olá! Vim pelo site da Clean Up e gostaria de um orçamento.'
+  );
+
+  a.target = '_blank';
+  a.rel = 'noopener';
+});
+
+calculate();
 </script>
-</body></html>
-Novembro Clean
+
+</body>
+</html>
